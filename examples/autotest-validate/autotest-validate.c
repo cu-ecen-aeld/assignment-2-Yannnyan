@@ -2,9 +2,9 @@
 * A simple file to validate your automated test setup for AESD
 */
 
+#include "assignment-autotest/test/assignment1/username-from-conf-file.h"
 #include "autotest-validate.h"
 #include <stdbool.h>
-
 /**
 * @return true (as you may have guessed from the name)
 */
@@ -27,5 +27,6 @@ bool this_function_returns_false()
  */
 const char *my_username()
 {
-    return "todo-please-enter-your-username-here-in-my_username";
+    char * username = malloc_username_from_conf_file();
+    return username;
 }
